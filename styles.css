@@ -25,7 +25,7 @@ body {
     padding: 10px
 }
 
-.nav-item {
+.no-decor {
     text-decoration: none;
 }
 
@@ -137,4 +137,19 @@ body {
 
 .rounded {
     border-radius: 20px;
+}
+
+/* table */
+.table-ds, th, td {
+    border-collapse: collapse;
+    background-color: #e8e5d8;
+    border: 5px #fffcef solid;
+}
+
+td {
+    padding-left: 20px;
+}
+
+.td-empty {
+    background-color: #fffcef;
 }
