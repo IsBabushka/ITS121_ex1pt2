@@ -3,40 +3,41 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
         <title>DSA by Allen</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
-    <body style="background-color:#fffcef; font-family: Arial, Helvetica, sans-serif; margin: 0; color: #525252;">
+    <body>
 
         <!-- Navbar -->
-        <div style="overlay: hidden; background-color: #211c22; padding: 30px;">
+        <div class="navbar">
             <h2>   
-                <a href="page1_homepage.html" style="padding-left: 40px; color:#a29f92; text-decoration: none;">Home</a>                
-                <a href="page2_structures.html" style="padding-left: 40px; color:#fffcef; text-decoration: none;">Structures</a>
-                <a href="page3_algorithms.html" style="padding-left: 40px; color:#a29f92; text-decoration: none;">Algorithms</a>
+                <a href="page1_homepage.html" class="nav-item left unselected">Home</a>                
+                <a href="page2_structures.html" class="nav-item left selected">Structures</a>
+                <a href="page3_algorithms.html" class="nav-item left unselected">Algorithms</a>
             </h2>
         </div>
 
-        <div style="margin: auto; width: 78%;">
+        <div class="middle-div">
 
 
-            <h1 style="color: #697565; font-size: 60px; text-align: center; padding: 60px;">Most Common Data Structures</h1>
+            <h1 class="green-text top-header centered" style="padding: 60px;">Most Common Data Structures</h1>
             <br/><br/>
 
             <hr/>
 
             
             <div id="arrays" style="padding: 80px 0;">
-                <h1 style="color: #525252; font-size: 60px;">1. Arrays</h1>
-                <div style="align-items: center; margin: auto; background-color: #e8e5d8; border-radius: 20px; padding: 20px">
-                    <div style="display: flex; justify-content: space-evenly; padding-bottom: 20px;">
+                <h1 class="dark-gray-text fs60">1. Arrays</h1>
+                <div class="big-box">
+                    <div class="section-flex" style="padding-bottom: 20px;">
                         <img src="images/img6_arrays.png" alt="Image of an Array" width="50%" style="object-fit: contain;"/>
-                        <div style="background-color: #e8e5d8; padding: 20px; width: 40%; line-height: 2;">
-                            <p style="margin: 0; font-size: 20px;">
+                        <div class="small-text-right">
+                            <p class="small-text">
                                 An array is an arrangement of numbers, pictures or objects formatted into rows and columns according to their type. In coding and programming, an array is a collection of items, or data, stored in contiguous memory locations, also known as database systems. The purpose of an array is to store multiple pieces of data of the same type together. You can use an array to demonstrate a mathematical property known as the commutative property of multiplication, which illustrates that you can change the order of the factors or elements, and the product of the elements remains the same.
                             </p>
                         </div>         
                     </div>
-                    <div style="background-color: #e8e5d8; padding: 20px; width: 90%; line-height: 2; margin: auto;">
-                        <p style="margin: 0; font-size: 20px;">
+                    <div class="small-text-bottom">
+                        <p class="small-text">
                             In computer programming, an array can help you locate and identify where you stored each piece of data, or element, by adding an offset to each value. An offset is a number that represents the difference between the two indexes. Similar to an index in a book, an index in computer programming contains a record of entries with the names of the data items and their locations. Thus, you can identify each element and its location by referring to the index within the array.
                         </p>
                     </div>
@@ -46,18 +47,18 @@
 
 
             <div id="lists" style="padding: 80px 0;">
-                <h1 style="color: #525252; font-size: 60px;">2. Linked Lists</h1>
-                <div style="align-items: center; margin: auto; background-color: #e8e5d8; border-radius: 20px; padding: 20px">
-                    <div style="display: flex; justify-content: space-evenly; padding-bottom: 20px;">
+                <h1 class="dark-gray-text fs60">2. Linked Lists</h1>
+                <div class="big-box">
+                    <div class="section-flex" style="padding-bottom: 20px;">
                         <img src="images/img7_lists.jpeg" alt="Image of a Linked List" width="50%" style="object-fit: contain;"/>
-                        <div style="background-color: #e8e5d8; padding: 20px; width: 40%; line-height: 2;">
-                            <p style="margin: 0; font-size: 20px;">
+                        <div class="small-text-right">
+                            <p class="small-text">
                                 A linked list is a linear data structure which can store a collection of "nodes" connected together via links i.e. pointers. Linked lists nodes are not stored at a contiguous location, rather they are linked using pointers to the different memory locations. A node consists of the data value and a pointer to the address of the next node within the linked list.
                             </p>
                         </div>         
                     </div>
-                    <div style="background-color: #e8e5d8; padding: 20px; width: 90%; line-height: 2; margin: auto;">
-                        <p style="margin: 0; font-size: 20px;">
+                    <div class="small-text-bottom">
+                        <p class="small-text">
                             A linked list is a dynamic linear data structure whose memory size can be allocated or de-allocated at run time based on the operation insertion or deletion, this helps in using system memory efficiently. Linked lists can be used to implement various data structures like a stack, queue, graph, hash maps, etc. A linked list starts with a head node which points to the first node. Every node consists of data which holds the actual data (value) associated with the node and a next pointer which holds the memory address of the next node in the linked list. The last node is called the tail node in the list which points to null indicating the end of the list.
                         </p>
                     </div>
@@ -65,18 +66,18 @@
             </div>
 
             <div id="stacks" style="padding: 80px 0;">
-                <h1 style="color: #525252; font-size: 60px;">3. Stacks</h1>
-                <div style="align-items: center; margin: auto; background-color: #e8e5d8; border-radius: 20px; padding: 20px">
-                    <div style="display: flex; justify-content: space-evenly; padding-bottom: 20px;">
+                <h1 class="dark-gray-text fs60">3. Stacks</h1>
+                <div class="big-box">
+                    <div class="section-flex" style="padding-bottom: 20px;">
                         <img src="images/img8_stacks.png" alt="Image of a Stack" width="50%" style="object-fit: contain;"/>
-                        <div style="background-color: #e8e5d8; padding: 20px; width: 40%; line-height: 2;">
-                            <p style="margin: 0; font-size: 20px;">
+                        <div class="small-text-right">
+                            <p class="small-text">
                                 A stack is a linear data structure where elements are stored in the LIFO (Last In First Out) principle where the last element inserted would be the first element to be deleted. A stack is an Abstract Data Type (ADT), that is popularly used in most programming languages. It is named stack because it has the similar operations as the real-world stacks, for example − a pack of cards or a pile of plates, etc.
                             </p>
                         </div>         
                     </div>
-                    <div style="background-color: #e8e5d8; padding: 20px; width: 90%; line-height: 2; margin: auto;">
-                        <p style="margin: 0; font-size: 20px;">
+                    <div class="small-text-bottom">
+                        <p class="small-text">
                             A stack allows all data operations at one end only. At any given time, we can only access the top element of a stack. A stack can be implemented by means of Array, Structure, Pointer, and Linked List. Stack can either be a fixed size one or it may have a sense of dynamic resizing. Stack is considered a complex data structure because it uses other data structures for implementation, such as Arrays, Linked lists, etc.
                         </p>
                     </div>
@@ -84,18 +85,18 @@
             </div>
 
             <div id="queues" style="padding: 80px 0;">
-                <h1 style="color: #525252; font-size: 60px;">4. Queues</h1>
-                <div style="align-items: center; margin: auto; background-color: #e8e5d8; border-radius: 20px; padding: 20px">
-                    <div style="display: flex; justify-content: space-evenly; padding-bottom: 20px;">
+                <h1 class="dark-gray-text fs60">4. Queues</h1>
+                <div class="big-box">
+                    <div class="section-flex" style="padding-bottom: 20px;">
                         <img src="images/img9_queues.png" alt="Image of a Queue" width="50%" style="object-fit: contain;"/>
-                        <div style="background-color: #e8e5d8; padding: 20px; width: 40%; line-height: 2;">
-                            <p style="margin: 0; font-size: 20px;">
+                        <div class="small-text-right">
+                            <p class="small-text">
                                 A queue is a linear data structure where elements are stored in the FIFO (First In First Out) principle where the first element inserted would be the first element to be accessed. A queue is an Abstract Data Type (ADT) similar to stack, the thing that makes queue different from stack is that a queue is open at both its ends. The data is inserted into the queue through one end and deleted from it using the other end. Queue is very frequently used in most programming languages.
                             </p>
                         </div>         
                     </div>
-                    <div style="background-color: #e8e5d8; padding: 20px; width: 90%; line-height: 2; margin: auto;">
-                        <p style="margin: 0; font-size: 20px;">
+                    <div class="small-text-bottom">
+                        <p class="small-text">
                             Queue operations also include initialization of a queue, usage and permanently deleting the data from the memory. The most fundamental operations in the queue ADT include: enqueue(), dequeue(), peek(), isFull(), isEmpty(). These are all built-in operations to carry out data manipulation and to check the status of the queue. Queue uses two pointers − front and rear. The front pointer accesses the data from the front end (helping in enqueueing) while the rear pointer accesses data from the rear end (helping in dequeuing).
                         </p>
                     </div>
@@ -103,18 +104,18 @@
             </div>
 
             <div id="hash" style="padding: 80px 0;">
-                <h1 style="color: #525252; font-size: 60px;">5. Hash Tables</h1>
-                <div style="align-items: center; margin: auto; background-color: #e8e5d8; border-radius: 20px; padding: 20px">
-                    <div style="display: flex; justify-content: space-evenly; padding-bottom: 20px;">
+                <h1 class="dark-gray-text fs60">5. Hash Tables</h1>
+                <div class="big-box">
+                    <div class="section-flex" style="padding-bottom: 20px;">
                         <img src="images/img10_hash.webp" alt="Image of a Hash Table / Dictionary" width="50%" style="object-fit: contain;"/>
-                        <div style="background-color: #e8e5d8; padding: 20px; width: 40%; line-height: 2;">
-                            <p style="margin: 0; font-size: 20px;">
+                        <div class="small-text-right">
+                            <p class="small-text">
                                 Hash Table (or dictionaries in Python) is a data structure which stores data in an associative manner. In a hash table, data is stored in an array format, where each data value has its own unique index value. Access of data becomes very fast if we know the index of the desired data. 
                             </p>
                         </div>         
                     </div>
-                    <div style="background-color: #e8e5d8; padding: 20px; width: 90%; line-height: 2; margin: auto;">
-                        <p style="margin: 0; font-size: 20px;">
+                    <div class="small-text-bottom">
+                        <p class="small-text">
                             Thus, it becomes a data structure in which insertion and search operations are very fast irrespective of the size of the data. Hash Table uses an array as a storage medium and uses hash technique to generate an index where an element is to be inserted or is to be located from.
                         </p>
                     </div>
