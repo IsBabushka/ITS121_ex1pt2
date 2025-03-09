@@ -9,16 +9,13 @@
         <!-- Navbar -->
         <div class="navbar">
             <h2>
-                <a href="page1_homepage.html" class="nav-item left selected">Home</a>                
-                <a href="page2_structures.html" class="nav-item left unselected">Structures</a>
-                <a href="page3_algorithms.html" class="nav-item left unselected">Algorithms</a>
+                <a href="page1_homepage.html" class="no-decor left selected">Home</a>                
+                <a href="page2_structures.html" class="no-decor left unselected">Structures</a>
+                <a href="page3_algorithms.html" class="no-decor left unselected">Algorithms</a>
                 
-                <a href="#references" class="nav-item right unselected">References</a>                
-                <a href="#time" class="nav-item right unselected">Classes</a>
-                <a href="#tips" class="nav-item right unselected">Tips</a>
-                <a href="#types" class="nav-item right unselected">Types</a>
-                <a href="#discussion" class="nav-item right unselected">Discussion</a>
-                <a href="#introduction" class="nav-item right unselected">Introduction</a>
+                <a href="#references" class="no-decor right unselected">References</a>                
+                <a href="#discussion" class="no-decor right unselected">Discussion</a>
+                <a href="#introduction" class="no-decor right unselected">Introduction</a>
             </h2>
         </div>
 
@@ -91,38 +88,6 @@
 
             <hr/>
 
-            <!-- Different Types -->
-            <div id="types" style="padding: 60px 60px 360px 60px">
-                <h1 class="green-text section-header" style="padding-bottom: 30px;">Different Types of Data Structures</h1>
-                <div class="section-flex">
-                    <div class="big-box-uncentered rounded green-text" style="padding: 20px">
-                        <h1 class="fs30">Linear Data Structures</h1>
-                        <ul class="fs20" type="square">
-                            <li>Arrays</li>
-                            <li>Linked Lists</li>
-                            <li>Stacks</li>
-                            <li>Queues</li>
-                        </ul>
-                    </div>
-                    <div class="big-box-uncentered rounded green-text" style="padding: 20px">
-                        <h1 class="fs30">Non-Linear Data Structures</h1>
-                        <ul class="fs20" type="square">
-                            <li>Trees</li>
-                            <li>Graphs</li>
-                        </ul>
-                    </div>
-                    <div class="big-box-uncentered rounded green-text" style="padding: 20px">
-                        <h1 class="fs30">Hash-Based Data Structures</h1>
-                        <ul class="fs20" type="square">
-                            <li>Hash Sets</li>
-                            <li>Hash Maps / Dictionaries (Python)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <hr/>
-
             <!-- Steps in solving -->
             <div id="tips" style="padding: 60px">
 
@@ -179,6 +144,8 @@
                 
             </div>
 
+            <hr/>
+            
             <!-- Resources to learn from -->
             <div id="resources" style="padding: 60px">
                 <h1 class="green-text section-header centered" style="padding-bottom: 30px;">Best Resources to Learn DSA</h1>
@@ -214,6 +181,87 @@
                     </div>
                 </div>
                 
+            </div>
+
+            <hr/>
+
+            <!-- Different Types -->
+            <div id="types" style="padding: 60px;">
+                <div class="section-flex">
+                    <table class="table-ds green-text" style="width: 90%;">
+                        <tr>
+                            <th colspan="5" class="th-ds fs60">Common DSA Patterns</th>
+                        </tr>
+                        <tr class="fs30">
+                            <th width="30%">Pattern/Concept</th>
+                            <th width="20%">DS Used</th>
+                            <th width="20%">Sample Problems</th>
+                            <th width="10%">Time Complexity</th>
+                            <th width="40%">Application</th>
+                        </tr>
+                        <tr class="fs20">
+                            <td class="fs30">Two Pointers</td>
+                            <td>Arrays</td>
+                            <td>
+                                <a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/" class="no-decor">Two Sum II</a>, 
+                                <a href="https://leetcode.com/problems/valid-palindrome/description/" class="no-decor">Valid Palindrome</a>
+                            </td>
+                            <td>O(n)</td>
+                            <td>Merging datasets, collision detection in physics simulations.</td>
+                        </tr>
+                        <tr class="fs20">
+                            <td class="fs30">Stack</td>
+                            <td>Stack</td>
+                            <td>
+                                <a href="https://leetcode.com/problems/valid-parentheses/" class="no-decor">Valid Parentheses</a>, 
+                                <a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/" class="no-decor">Evaulate Reverse Polish Notation</a>
+                            </td>
+                            <td>O(n)</td>
+                            <td>Undo/redo functionality in editors, backtracking algorithms.</td>
+                        </tr>
+                        <tr class="fs20">
+                            <td class="fs30">Linked Lists</td>
+                            <td>Linked Lists</td>
+                            <td>
+                                <a href="https://leetcode.com/problems/reverse-linked-list/description/" class="no-decor">Reverse Linked List</a>, 
+                                <a href="https://leetcode.com/problems/merge-two-sorted-lists/description/" class="no-decor">Merge Two Sorted Lists</a>
+                            </td>
+                            <td>O(n)</td>
+                            <td>Memory management, dynamic data storage (e.g., browser history).</td>
+                        </tr>
+                        <tr class="fs20">
+                            <td class="fs30">Hashing</td>
+                            <td>Hash Maps/Sets</td>
+                            <td>
+                                <a href="https://leetcode.com/problems/two-sum/" class="no-decor">Two Sum</a>, 
+                                <a href="https://leetcode.com/problems/product-of-array-except-self/description/" class="no-decor">Product of Array Except Self</a>
+                            </td>
+                            <td>O(1) for hashing operations</td>
+                            <td>Database indexing, API rate limiting, caching systems.</td>
+                        </tr>
+                        <tr class="fs20">
+                            <td class="fs30">Binary Search</td>
+                            <td>Arrays</td>
+                            <td>
+                                <a href="https://leetcode.com/problems/binary-search/description/" class="no-decor">Binary Search</a>, 
+                                <a href="https://leetcode.com/problems/median-of-two-sorted-arrays/description/" class="no-decor">Median of Two Sorted Arrays</a>
+                            </td>
+                            <td>O(log n)</td>
+                            <td>Searching sorted datasets (e.g., phone books, databases).</td>
+                        </tr>
+                        <tr class="fs20">
+                            <td class="fs30">Sliding Window</td>
+                            <td>Arrays</td>
+                            <td>
+                                <a href="https://neetcode.io/problems/buy-and-sell-crypto" class="no-decor">Best Time to Buy and Sell Stock</a>, 
+                                <a href="https://leetcode.com/problems/minimum-window-with-characters/" class="no-decor">Minimum Window Substring</a>
+                            </td>
+                            <td>O(n)</td>
+                            <td>Network packet analysis, real-time data stream monitoring.</td>
+                        </tr>
+                        
+                    </table>
+                </div>
             </div>
 
             <hr/>
