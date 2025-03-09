@@ -3,49 +3,48 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
         <title>DSA by Allen</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
-    <body style="background-color:#fffcef; font-family: Arial, Helvetica, sans-serif; margin: 0; color: #525252;">
-        <!-- (im very sorry if the inline CSS is messy, im under the assumption that external isnt allowed yet, but I REALLY want to make it look good. the repository will be linked in the references for version control purposes) -->
-
+    <body>
         <!-- Navbar -->
-        <div style="overlay: hidden; background-color: #211c22; padding: 30px;">
+        <div class="navbar">
             <h2>
-                <a href="page1_homepage.html" style="padding-left: 40px; color:#fffcef; text-decoration: none;">Home</a>                
-                <a href="page2_structures.html" style="padding-left: 40px; color:#a29f92; text-decoration: none;">Structures</a>
-                <a href="page3_algorithms.html" style="padding-left: 40px; color:#a29f92; text-decoration: none;">Algorithms</a>
+                <a href="page1_homepage.html" class="nav-item left selected">Home</a>                
+                <a href="page2_structures.html" class="nav-item left unselected">Structures</a>
+                <a href="page3_algorithms.html" class="nav-item left unselected">Algorithms</a>
                 
-                <a href="#references" style="float:right; padding-right: 40px; color:#a29f92; text-decoration: none;">References</a>                
-                <a href="#time" style="float:right; padding-right: 40px; color:#a29f92; text-decoration: none;">Classes</a>
-                <a href="#tips" style="float:right; padding-right: 40px; color:#a29f92; text-decoration: none;">Tips</a>
-                <a href="#types" style="float:right; padding-right: 40px; color:#a29f92; text-decoration: none;">Types</a>
-                <a href="#discussion" style="float:right; padding-right: 40px; color:#a29f92; text-decoration: none;">Discussion</a>
-                <a href="#introduction" style="float:right; padding-right: 40px; color:#a29f92; text-decoration: none;">Introduction</a>
+                <a href="#references" class="nav-item right unselected">References</a>                
+                <a href="#time" class="nav-item right unselected">Classes</a>
+                <a href="#tips" class="nav-item right unselected">Tips</a>
+                <a href="#types" class="nav-item right unselected">Types</a>
+                <a href="#discussion" class="nav-item right unselected">Discussion</a>
+                <a href="#introduction" class="nav-item right unselected">Introduction</a>
             </h2>
         </div>
 
-        <div style="margin: auto; width: 78%;">
+        <div class="middle-div">
 
             <!-- Title -->
-            <div style="color: #697565; text-align: center; padding: 80px;">
-                <h1 style="font-size: 60px; margin-bottom: 0;">Data Structures and Algorithms</h1>
-                <h2 style="font-size: 40px; margin-top: 0; font-style: italic;">by Allen S. Quilatan</h2>
+            <div class="green-text centered" style="padding: 80px;">
+                <h1 class="top-header">Data Structures and Algorithms</h1>
+                <h2 class="bottom-header italic">by Allen S. Quilatan</h2>
             </div>
             
             <hr/>
 
             <!-- Introduction -->
             <div id="introduction" style="padding: 60px">
-                <h1 style="color: #697565; font-size: 60px; margin-bottom: 0;">Introduction</h1>
-                <div style="background-color: #e8e5d8; color: #525252; padding: 30px; margin: 40px;">
-                    <p style="font-size: 50px; margin: 0;">
+                <h1 class="green-text section-header">Introduction</h1>
+                <div class="enclosing dark-gray-text" style="padding: 30px; margin: 40px;">
+                    <p class="quotes">
                         <em><q>Algorithms + Data Structures = Programs.</q></em><br/>
                         &nbsp; &nbsp; - Niklaus Wirth
                     </p>
                 </div>
 
-                <div style="display: flex; justify-content: space-evenly; background-color: #e8e5d8; padding: 20px; border-radius: 20px; ">
-                    <div style="background-color: #e8e5d8; padding: 20px; width: 40%; line-height: 2;">
-                        <p style="margin: 0; font-size: 20px;">
+                <div class="section-flex big-box">
+                    <div class="small-text-right">
+                        <p class="small-text">
                             Data Structures and Algorithms (<abbr title="Data Structures and Algorithms ">DSA</abbr>) is a fundamental concept in computer science that involves the study and application of methods for organizing and manipulating data, along with the procedures (algorithms) used to operate on that data efficiently. <strong>DSA is crucial for developing efficient and scalable software solutions.  </strong>                  
                         </p>
                     </div>
@@ -57,32 +56,32 @@
 
             <!-- Discussion -->
             <div id="discussion" style="padding: 60px">
-                <h1 style="color: #697565; font-size: 60px; margin-bottom: 0;">Discussion</h1>
-                <div style="background-color: #e8e5d8; color: #525252; padding: 30px; margin: 40px;">
+                <h1 class="green-text section-header">Discussion</h1>
+                <div class="enclosing dark-gray-text" style="padding: 30px; margin: 40px;">
                     <p style="font-size: 50px; margin: 0;">
                         <em><q>The art of programming is the art of organizing complexity.</q></em><br/>
                         &nbsp; &nbsp; - Edsger W. Dijkstra
                     </p>
                 </div>
 
-                <div style="background-color: #e8e5d8; padding: 10px; border-radius: 20px; ">
-                    <div style="display: flex; justify-content: space-evenly; background-color: #e8e5d8; padding: 20px;">
+                <div class="big-box-uncentered rounded">
+                    <div class="section-flex big-box-uncentered" style="background-color: #e8e5d8; padding: 20px;">
                         <img src="images/img2_discussion1.jpg" alt="Two Women Looking at the Code at Laptop" width="50%" style="object-fit: contain;"/>
-                        <div style="background-color: #e8e5d8; padding: 20px; width: 40%; line-height: 2;">
-                            <p style="margin: 0; font-size: 20px;">
+                        <div class="small-text-right">
+                            <p class="small-text">
                                 <abbr title="Data Structures and Algorithms ">DSA</abbr> form the backbone of computer science and software development, serving as the foundation for solving computational problems efficiently. At its core, <strong><abbr title="Data Structures and Algorithms ">DSA</abbr> is about organizing data in meaningful ways and designing step-by-step procedures to manipulate that data effectively.</strong> Whether you're managing a small list of items or building a complex system like a search engine, understanding how to choose the right data structure—such as arrays, linked lists, trees, or graphs—and applying the appropriate algorithm can make a significant difference in performance. These concepts are universal, transcending programming languages and platforms, making them essential for anyone pursuing a career in technology.                    
                             </p>
                         </div>
                     </div>
     
-                    <div style="padding: 20px; line-height: 2; width: 80%; margin: auto;">
-                        <p style="margin: 0; font-size: 20px;">
+                    <div style="padding: 20px; width: 80%; margin: auto;">
+                        <p class="small-text">
                             The importance of learning DSA cannot be overstated, as it directly impacts the efficiency and scalability of software systems. Efficient algorithms reduce processing time and resource usage, which is critical when dealing with large datasets or real-time applications. For instance, using a hash table for quick lookups can drastically improve the speed of a database query, while a well-implemented sorting algorithm ensures that data is organized for faster access. In a world increasingly driven by data, mastering <abbr title="Data Structures and Algorithms ">DSA</abbr> equips developers with the tools to write optimized code, minimize bottlenecks, and build systems that can handle growing demands without compromising performance.               
                         </p>
                     </div>
     
-                    <div style="padding: 20px; line-height: 2; width: 80%; margin: 20px auto auto auto;">
-                        <p style="margin: 0; font-size: 20px;">
+                    <div style="padding: 20px; width: 80%; margin: 20px auto auto auto;">
+                        <p class="small-text">
                             Beyond technical benefits, <strong> learning <abbr title="Data Structures and Algorithms ">DSA</abbr> promotes problem-solving skills and logical thinking</strong>, which are invaluable in any field. It trains individuals to break down complex problems into smaller, manageable components and approach them systematically. This skill set is not only crucial for acing technical interviews but also for tackling real-world challenges, such as optimizing supply chains, improving AI models, or designing user-friendly applications. 
                         </p>
                     </div>
@@ -93,28 +92,28 @@
             <hr/>
 
             <!-- Different Types -->
-            <div id="types" style="padding: 60px">
-                <h1 style="color: #697565; font-size: 60px; margin-bottom: 0; padding-bottom: 30px;">Different Types of Data Structures</h1>
-                <div style="display: flex; justify-content:space-around;">
-                    <div style="background-color: #e8e5d8; color: #697565; padding: 30px; border-radius: 20px; width: 20%">
-                        <h1 style="font-size: 30px;">Linear Data Structures</h1>
-                        <ul style="font-size: 20px;">
+            <div id="types" style="padding: 60px 60px 360px 60px">
+                <h1 class="green-text section-header" style="padding-bottom: 30px;">Different Types of Data Structures</h1>
+                <div class="section-flex">
+                    <div class="big-box-uncentered rounded green-text" style="padding: 20px">
+                        <h1 class="fs30">Linear Data Structures</h1>
+                        <ul class="fs20" type="square">
                             <li>Arrays</li>
                             <li>Linked Lists</li>
                             <li>Stacks</li>
                             <li>Queues</li>
                         </ul>
                     </div>
-                    <div style="background-color: #e8e5d8; color: #697565; padding: 30px; border-radius: 20px; width: 20%">
-                        <h1 style="font-size: 30px;">Non-Linear Data Structures</h1>
-                        <ul style="font-size: 20px;">
+                    <div class="big-box-uncentered rounded green-text" style="padding: 20px">
+                        <h1 class="fs30">Non-Linear Data Structures</h1>
+                        <ul class="fs20" type="square">
                             <li>Trees</li>
                             <li>Graphs</li>
                         </ul>
                     </div>
-                    <div style="background-color: #e8e5d8; color: #697565; padding: 30px; border-radius: 20px; width: 20%">
-                        <h1 style="font-size: 30px;">Hash-Based Data Structures</h1>
-                        <ul style="font-size: 20px;">
+                    <div class="big-box-uncentered rounded green-text" style="padding: 20px">
+                        <h1 class="fs30">Hash-Based Data Structures</h1>
+                        <ul class="fs20" type="square">
                             <li>Hash Sets</li>
                             <li>Hash Maps / Dictionaries (Python)</li>
                         </ul>
@@ -127,14 +126,14 @@
             <!-- Steps in solving -->
             <div id="tips" style="padding: 60px">
 
-                <h1 style="color: #697565; font-size: 60px; text-align: center; padding-bottom: 30px;">Tips for solving DSA problems</h1>
+                <h1 class="green-text section-header centered" style="padding-bottom: 30px;">Tips for solving DSA problems</h1>
                 <br/><br/>
 
-                <h1 style="color: #525252; font-size: 60px;">1. Try to understand the question</h1>
-                <div style="background-color: #e8e5d8; padding: 10px; border-radius: 20px;">
-                    <div style="display: flex; justify-content: space-evenly;">
-                        <div style="padding: 20px; width: 40%; line-height: 2;">
-                            <p style="margin: 0; font-size: 20px;">
+                <h1 class="section-header">1. Try to understand the question</h1>
+                <div class="big-box-uncentered rounded">
+                    <div class="section-flex" >
+                        <div style="padding: 20px; width: 40%;">
+                            <p class="small-text">
                                 When I first started tackling Data Structures and Algorithms (DSA) problems, I quickly realized that the most important step is understanding the question. It’s tempting to jump straight into coding, especially when you’re eager to solve a problem, but trust me—this approach rarely works. I remember spending hours on a LeetCode problem called Trapping Rain Water because I misunderstood what was being asked. Once I slowed down, read the problem multiple times, and wrote out examples by hand, everything clicked. Breaking the problem into smaller parts and identifying inputs, outputs, and constraints makes it much easier to approach. Another is by getting the different test cases. For example, what happens if the input array is empty? Or if all elements are identical? These considerations save you from bugs later on. Taking the time to fully grasp the problem sets the foundation for an effective solution.
                             </p> <!-- actual experiences -->
                         </div>
@@ -143,11 +142,11 @@
                 </div>
                 
                 
-                <h1 style="color: #525252; font-size: 60px;">2. Pseudocodes Are Your Friend</h1>
-                <div style="background-color: #e8e5d8; padding: 10px; border-radius: 20px;">
-                    <div style="display: flex; justify-content: space-evenly;">
-                        <div style="padding: 20px; width: 40%; line-height: 2;">
-                            <p style="margin: 0; font-size: 20px;">
+                <h1 class="section-header">2. Pseudocodes Are Your Friend</h1>
+                <div class="big-box-uncentered rounded">
+                    <div class="section-flex" >
+                        <div style="padding: 20px; width: 40%;">
+                            <p class="small-text">
                                 One of the best practices I picked up during my studies at Mapúa was writing pseudocode before diving into actual implementation. Pseudocode allows you to focus on logic without getting bogged down by syntax or language-specific quirks. When I worked on Largest Rectangle in Histogram , a notoriously tricky "hard" problem on LeetCode, pseudocoding helped me visualize the steps needed to compute areas efficiently using a stack. Instead of worrying about whether I had semicolons in the right places, I could concentrate on the flow of operations: iterating through heights, pushing indices onto the stack, and calculating maximum areas. Writing pseudocode also makes debugging easier since you can trace your thought process step-by-step.
                             </p> <!-- actual experiences -->
                         </div>
@@ -157,19 +156,19 @@
 
                 
 
-                <h1 style="color: #525252; font-size: 60px;">3. Avoid Premature Optimization!</h1>
-                <div style="background-color: #e8e5d8; padding: 10px; border-radius: 20px;">
-                    <div style="display: flex; justify-content: space-evenly;">
-                        <div style="padding: 20px; width: 40%; line-height: 2;">
-                            <p style="margin: 0; font-size: 20px;">
+                <h1 class="section-header">3. Avoid Premature Optimization!</h1>
+                <div class="big-box-uncentered rounded">
+                    <div class="section-flex" >
+                        <div style="padding: 20px; width: 40%;">
+                            <p class="small-text">
                                 Early in my journey with DSA, I fell into the trap of trying to optimize my solutions too soon. I’d obsess over making every line of code run faster, even before ensuring that my basic solution worked correctly. Then I came across Donald Knuth’s famous quote: 
                             </p> <!-- actual experiences -->
     
-                            <blockquote style="font-size: 20px;">
+                            <blockquote class="fs20">
                                 <i>We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%.</i>
                             </blockquote>
     
-                            <p style="margin: 0; font-size: 20px;">
+                            <p class="small-text">
                                 This resonated deeply with me because I realized how often I sacrificed clarity for minor performance gains that didn’t matter in the grand scheme of things. For instance, while solving Trapping Rain Water , I initially tried to implement a two-pointer technique right away instead of starting with a brute-force approach. It wasn’t until I stepped back and built a simpler version that I understood the underlying mechanics of the problem.
                             </p> 
                                 
@@ -182,34 +181,34 @@
 
             <!-- Resources to learn from -->
             <div id="resources" style="padding: 60px">
-                <h1 style="color: #697565; font-size: 60px; text-align: center; padding-bottom: 30px;">Best Resources to Learn DSA</h1>
+                <h1 class="green-text section-header centered" style="padding-bottom: 30px;">Best Resources to Learn DSA</h1>
 
-                <div style="background-color: #e8e5d8; padding: 20px ; border-radius: 20px;">
-                    <div style="display: flex; justify-content: space-evenly;">
-                        <div style="background-color: #e8e5d8; padding: 20px; width: 50%; line-height: 2;">
-                            <p style="margin: 0; font-size: 20px;">
+                <div class="big-box-uncentered rounded">
+                    <div class="section-flex" >
+                        <div style="padding: 20px; width: 50%;">
+                            <p class="small-text">
                                 When it comes to mastering Data Structures and Algorithms (DSA), having the right resources can make all the difference, and for me, NeetCodeIO has been an absolute game-changer. NeetCode’s structured approach to problem-solving, particularly through the NeetCode 150 , has helped me focus on the most important LeetCode problems that are frequently asked in technical interviews (Even if it isn’t as relevant here in the Philippines). On the theory side, Abdul Bari is my go-to creator for understanding the fundamentals of DSA. His YouTube lectures break down complex concepts like graph algorithms, sorting techniques, and recursion in a way that’s both engaging and easy to follow.
                             </p> 
                         </div>
-                        <div style="background-color: #d4d1c5; padding: 20px; width: 40%; line-height: 2; color:#697565; border-radius: 20px;">
-                            <h1 style="font-size: 30px; margin: 0">Creators</h1>
-                            <ul style="font-size: 20px; margin: 0">
+                        <div class="green-text rounded" style="background-color: #d4d1c5; padding: 20px; width: 40%;">
+                            <h1 class="fs30" style="margin: 0">Creators</h1>
+                            <ul class="fs20" style="margin: 0">
                                 <li>NeetCode / NeetCodeIO</li>
                                 <li>Abdul Bari</li>
                             </ul>
     
                             <br/>
     
-                            <h1 style="font-size: 30px; margin: 0">Websites</h1>
-                            <ul style="font-size: 20px; margin: 0">
+                            <h1 class="fs30" style="margin: 0">Websites</h1>
+                            <ul class="fs20" style="margin: 0">
                                 <li>LeetCode</li>
                                 <li>GeekforGeeks</li>
                             </ul>
                         </div>
                     </div>
     
-                    <div style="padding: 20px; margin: 30px;  line-height: 2;">
-                        <p style="margin: 0; font-size: 20px;">
+                    <div style="padding: 20px; margin: 30px; ">
+                        <p class="small-text">
                             In addition to these creators, there are a few websites I rely on heavily for practice and reference. LeetCode is where I spend most of my time solving problems, especially since I’m currently working through the NeetCode 150 list—it’s challenging but incredibly rewarding. For theory and written explanations, GeeksforGeeks is my go-to resource; their articles provide detailed breakdowns of algorithms and data structures, often accompanied by code snippets in multiple languages.
                         </p>
                     </div>
@@ -222,14 +221,14 @@
             <!-- O(-) Time Complexity -->
 
             <div id="time" style="padding: 60px;">
-                <div style="color: #697565; text-align: center; padding: 50px;">
-                    <h1 style="font-size: 60px; margin-bottom: 0;">Big O Time Complexity Classes</h1>
-                    <h2 style="font-size: 40px; margin-top: 0; font-style: italic;">From Best to Worst</h2>
+                <div class="green-text section-header centered">
+                    <h1 class="top-header">Big O Time Complexity Classes</h1>
+                    <h2 class="bottom-header italic">From Best to Worst</h2>
                 </div>
 
-                <div style="background-color: #e8e5d8; padding: 20px; border-radius: 20px;">
+                <div class="big-box-uncentered rounded" style="padding: 20px;">
                     <div style="background-color: #d4d1c5; padding: 20px; border-radius: 30px;">
-                        <ol type="1" style="color: #697565; font-size: 25px;">
+                        <ol type="1" class="fs30 green-text">
                             <li><b>O(1)</b> : Constant time (e.g., accessing an array element).</li>
                             <li><b>O(log n)</b>  : Logarithmic time (e.g., binary search).</li>
                             <li><b>O(n)</b>  : Linear time (e.g., traversing an array).</li>
@@ -241,11 +240,11 @@
                         </ol>
                     </div>
     
-                    <div style="background-color: #e8e5d8; padding: 20px; margin: 30px;  line-height: 2;">
-                        <p style="margin: 0; font-size: 20px;">
+                    <div style="margin: 30px;">
+                        <p class="small-text">
                             Big O notation is a fundamental concept in computer science used to describe the efficiency of algorithms, specifically their time and space complexity. It classifies algorithms based on how their runtime or memory usage grows with input size. For example, O(1) represents constant time operations like accessing an array element, which are highly efficient regardless of input size, while O(log n) , seen in binary search, demonstrates logarithmic growth, making it ideal for large datasets. Linear time (O(n)) is common in simple traversals, and O(n log n) is typical for efficient sorting algorithms like MergeSort and QuickSort. However, as we move into quadratic time (O(n<sup>2</sup>)), cubic time (O(n<sup>3</sup>)), or worse (e.g., exponential O(2<sup>n</sup>) or factorial O(n!) time), the performance degrades significantly, especially with larger inputs. These higher complexity classes should generally be avoided unless absolutely necessary, as they can lead to impractical runtimes for real-world applications. As a rule of thumb, <mark>strive for algorithms with lower growth rates to ensure scalability and efficiency.</mark> To emphasize this point:
                         </p>
-                        <blockquote style="font-size: 20px;">
+                        <blockquote class="fs20">
                             <i>Despite computers getting faster, we're dealing with more data than ever. Think of it like this: every time we use the Internet, smartphones, or smart home devices, we create tons of information. As this mountain of data grows, sorting through it and finding what's important becomes harder. That's why it's really important to keep making our tools—especially algorithms—better at handling and understanding all this information.</i>
                         </blockquote>
                     </div>
@@ -256,9 +255,9 @@
             <hr/>
             <!-- References -->
             <div id="references" style="padding: 60px">
-                <h1 style="color: #697565; font-size: 60px; padding-bottom: 30px;">References</h1>
+                <h1 class="fs60 green-text" style="padding-bottom: 30px;">References</h1>
 
-                <div style="background-color: #e8e5d8; padding: 20px; margin: 30px;  line-height: 2;">
+                <div class="big-box-uncentered" style="padding: 20px; margin: 30px; ">
                     For Text Used
                     <p><a href="https://www.indeed.com/career-advice/career-development/what-is-array">What is an Array?</a></p>
                     <p><a href="https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm">Linked List Data Structure</a></p>
